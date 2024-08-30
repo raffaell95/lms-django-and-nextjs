@@ -18,10 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-from src.core.views import CursoViewSet
+from src.core.views import AlunoViewSet, CursoViewSet
 
 router = DefaultRouter()
 router.register(r'api/cursos', CursoViewSet, basename='curso')
+router.register(r'api/alunos', AlunoViewSet, basename='aluno')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

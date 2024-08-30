@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from src.core.serializers import CursoResponseSerializer
+from src.core.models.aluno import Aluno
+from src.core.serializers import AlunoResponseSerializer, CursoResponseSerializer
 from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework.request import Request
@@ -14,3 +15,7 @@ class CursoViewSet(viewsets.ViewSet):
         serializer = CursoResponseSerializer(queryset, many=True)
 
         return Response(status=HTTP_200_OK, data=serializer.data)
+
+class AlunoViewSet(viewsets.ModelViewSet):
+    queryset = Aluno.objects.all()
+    serializer_class = AlunoResponseSerializer
