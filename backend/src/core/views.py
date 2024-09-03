@@ -16,6 +16,9 @@ class CursoViewSet(viewsets.ViewSet):
 
         return Response(status=HTTP_200_OK, data=serializer.data)
 
-class AlunoViewSet(viewsets.ModelViewSet):
-    queryset = Aluno.objects.all()
-    serializer_class = AlunoResponseSerializer
+class AlunoViewSet(viewsets.ViewSet):
+
+    def list(self, request: Request) -> Response:
+        queryset = Aluno.objects.all()
+        serializer = AlunoResponseSerializer(queryset, many=True)
+        return Response(status=HTTP_200_OK, data=serializer.data)

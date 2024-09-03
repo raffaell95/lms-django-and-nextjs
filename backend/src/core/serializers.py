@@ -16,7 +16,7 @@ class CursoResponseSerializer(serializers.Serializer):
     nome = serializers.CharField(max_length=100)
     descricao = serializers.CharField()
     is_active = serializers.BooleanField()
-    aulas = AulaResponseSerializer(many=True, read_only=True, )
+    aulas = AulaResponseSerializer(many=True, read_only=True)
 
 
 class UserResponseSerializer(serializers.Serializer):
