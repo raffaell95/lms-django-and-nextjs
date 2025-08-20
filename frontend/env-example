@@ -1,0 +1,6 @@
+# API
+API_URL="http://localhost:8000"
+
+# NextAuth.js
+AUTH_SECRET="kXghBMppimOMU4JWUEFXXt8e3ECn+wLB+RUlo6y1UCQ="
+AUTH_URL="http://localhost:3000 "

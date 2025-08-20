@@ -27,13 +27,13 @@ class CourseAuthorSerializer(serializers.ModelSerializer):
 class CourseSerializer(serializers.ModelSerializer):
     tags = TagSerializer(many=True, read_only=True)
     author = CourseAuthorSerializer(read_only=True)
-    total_enrollment = serializers.SerializerMethodField()
+    total_enrollments = serializers.SerializerMethodField()
 
     class Meta:
         model = Course
         fields = '__all__'
 
-    def get_total_enrollment(self, obj):
+    def get_total_enrollments(self, obj):
         return obj.enrollments.count()
     
 class ReviewSerializer(serializers.ModelSerializer):
