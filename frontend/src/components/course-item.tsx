@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { levelLabels } from "@/constants/labels"
 import { Badge } from "@/components/ui/badge"
 import { Star } from "lucide-react"
-import { formatPrice } from "@/lib/formatters"
+import { formatPrice } from "@/lib-example/formatters"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 

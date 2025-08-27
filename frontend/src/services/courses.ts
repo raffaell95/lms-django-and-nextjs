@@ -1,4 +1,4 @@
-import { api } from "@/lib/api"
+import { api } from "@/lib-example/api"
 import { CourseReviewForm } from "@/schemas/courses"
 
 
@@ -39,5 +39,12 @@ export const enrollInCourse = async (courseId: number) => {
     return api<APIPostCourseEnrollResponse>({
         endpoint: `/courses/${courseId}/enroll/`,
         method: "POST"
+    })
+}
+
+export const markLessonAsWatched = async (lessonId: number) => {
+    return api({
+        endpoint: `/courses/lessons/${lessonId}/watched/`,
+        method: 'POST'
     })
 }
