@@ -23,7 +23,7 @@ export const getCourseContent = async (courseId: number) => {
 
 export const getCourseReviews = async (courseId: number) => {
     return api<APIGetCourseReviewsResponse>({
-        endpoint: `/courses/${courseId}/reviews`
+        endpoint: `/courses/${courseId}/reviews/`
     })
 }
 
@@ -48,3 +48,10 @@ export const markLessonAsWatched = async (lessonId: number) => {
         method: 'POST'
     })
 }
+
+export const getCourseCertificate = async (courseId: number) => {
+    return api<APIGetCourseCertificateResponse>({
+        endpoint: `/courses/${courseId}/certificate/`
+    })
+}
+

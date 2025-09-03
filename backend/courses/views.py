@@ -35,7 +35,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
         if require_enrollment and not is_enrolled:
             raise APIException('Voce precisa estar matriculado neste curso.')
         
-        if require_enrollment and is_enrolled:
+        if not require_enrollment and is_enrolled:
             raise APIException(
                 'Você já esta matriculado neste curso.'
             )
@@ -175,7 +175,7 @@ class CourseViewSet(viewsets.ReadOnlyModelViewSet):
         course_data = CourseSerializer(course).data
         certificate_data = {
             'issued_at': datetime.now(),
-            'progress': progress
+            'progress': watched_progress.get('progress')
         }
 
         return Response({
