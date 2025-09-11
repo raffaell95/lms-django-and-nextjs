@@ -17,7 +17,7 @@ export const Navbar = () => {
                 <div className="flex h-16 items-center justify-between">
                     <Link href="" className="flex items-center space-x-2">
                         <BookOpen className="size-8 text-primary" />
-                        <span className="text-xl font-bold">Wigwam Academy</span>
+                        <span className="text-xl font-bold">WigPlatform</span>
                     </Link>
 
                     <div className="hidden md:flex items-center space-x-8">
@@ -38,7 +38,7 @@ export const Navbar = () => {
                                     <Link href="/auth/signin/">Entrar</Link>
                                 </Button>
                                 <Button asChild>
-                                    <Link href="auth/signup/">Cadastrar</Link>
+                                    <Link href="/auth/signup/">Cadastrar</Link>
                                 </Button>
                             </>
                         )}
@@ -68,7 +68,7 @@ export const Navbar = () => {
                                             <Link href="/auth/signin">Entrar</Link>
                                         </Button>
                                         <Button asChild>
-                                            <Link href="auth/signup">Cadastrar</Link>
+                                            <Link href="/auth/signup">Cadastrar</Link>
                                         </Button>
                                     </>
                                 )}

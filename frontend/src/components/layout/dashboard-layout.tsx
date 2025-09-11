@@ -28,7 +28,7 @@ export const DashboardLayout = ({ children }: Props) => {
         <div className="flex h-16 items-center">
           <Link href="/" className="flex items-center space-x-2">
             <GraduationCap className="size-8 text-primary" />
-            <span className="text-xl font-bold">EduPlatform</span>
+            <span className="text-xl font-bold">WigPlatform</span>
           </Link>
         </div>
 

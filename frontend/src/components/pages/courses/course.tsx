@@ -11,10 +11,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { levelColors } from "@/constants/colors"
 import { levelLabels } from "@/constants/labels"
 import { queryKeys } from "@/constants/query-keys"
-import { formatMinutes, formatPrice } from "@/lib-example/formatters"
-import { useAddCourseReview, useEnrollInCourse } from "@/lib-example/mutations"
-import { useGetCourseContent, useGetCourseReviews } from "@/lib-example/queries"
-import { queryClient } from "@/lib-example/query-client"
+import { formatMinutes, formatPrice } from "@/libs/formatters"
+import { useAddCourseReview, useEnrollInCourse } from "@/libs/mutations"
+import { useGetCourseContent, useGetCourseReviews } from "@/libs/queries"
+import { queryClient } from "@/libs/query-client"
 import { CourseReviewForm, courseReviewSchema } from "@/schemas/courses"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Award, BookOpen, CheckCircle, Clock, Play, Star, Users } from "lucide-react"
@@ -381,7 +381,7 @@ export const CoursePage = ({ course }: Props) => {
                                         </Avatar>
                                         <div>
                                             <h4 className="font-semibold">{course.author.name}</h4>
-                                            <p className="text-sm">Instrutor da Wigwam Academy</p>
+                                            <p className="text-sm">Instrutor da WigPlatform</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center justify-between px-6">

@@ -13,7 +13,7 @@ import { ToasterProvider } from "@/components/providers/toaster-provider"
 const inter = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
-  title: "Wigwam Academy - Plataforma de Cursos Online",
+  title: "WigPlatform - Plataforma de Cursos Online",
   description: "Aprenda com os melhores cursos online. Plataforma moderna e intuitiva para seu desenvolvimento profissional."
 }
 

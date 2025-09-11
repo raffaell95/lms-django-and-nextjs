@@ -1,4 +1,4 @@
-import { auth } from "@/lib-example/auth";
+import { auth } from "@/libs/auth";
 import { redirect } from "next/navigation";
 
 type Props = {

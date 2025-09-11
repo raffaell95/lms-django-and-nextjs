@@ -267,7 +267,7 @@ class ProcessCheckoutView(views.APIView):
             return redirect(settings.FRONTEND_BASE_URL)
         
         error_url = f'{settings.FRONTEND_BASE_URL}/courses/{order.course.id}?message=payment_failed'
-        success_url = f'{settings.FRONTEND_BASE_URL}/courses/{order.course.id}/kearn'
+        success_url = f'{settings.FRONTEND_BASE_URL}/courses/{order.course.id}/learn'
 
         try:
             session = stripe.checkout.Session.retrieve(order.external_payment_id)

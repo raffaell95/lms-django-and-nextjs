@@ -3,7 +3,7 @@
 import { DashboardLayout } from "@/components/layout/dashboard-layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { formatMinutes } from "@/lib-example/formatters";
+import { formatMinutes } from "@/libs/formatters";
 import { Award, BookOpen, Clock, Play, TrendingUp } from "lucide-react";
 import Link from "next/link";
 

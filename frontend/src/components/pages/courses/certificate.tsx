@@ -86,7 +86,7 @@ export const CertificatePage = ({certificate}: Props) => {
                                     <Award className="size-16 mx-auto text-white" />
                                     <h2 className="uppercase text-3x1 font-bold text-white">Certificado de Conclusão</h2>
                                     <p className="text-white">
-                                        Wigwam Academy - Plataforma de Cursos online
+                                        WigPlatform - Plataforma de Cursos online
                                     </p>
                                 </div>
                             </div>

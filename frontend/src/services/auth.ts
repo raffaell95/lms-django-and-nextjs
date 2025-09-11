@@ -1,4 +1,4 @@
-import { api } from "@/lib-example/api";
+import { api } from "@/libs/api";
 import { SignInForm, SignUpForm } from "@/schemas/auth";
 
 
